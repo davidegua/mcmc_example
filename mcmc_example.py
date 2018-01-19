@@ -11,7 +11,8 @@ import pygtc
 """
 variables of the data vector function:
 time from 0 to 36 months,
-weather conditions from - 1 (rain/cold/pollution --> Mordor ) to + 1 (sun --> Shire)
+weather conditions
+from - 0.3 (rain/cold/pollution --> Mordor ) to + 0.3 (sun --> Shire)
 """
 
 """""""""""""""""""""""""""""""""""""""""
@@ -28,7 +29,8 @@ def phd_stress_function(time, weather, theta_ar, doing_sport):
 
     if doing_sport == True:
         sport_activities = theta_ar[4] * (- time / 36.0) + 1.0 + weather
-        return thesis_anxiety + what_am_i_doing - pub_attendance + finish_the_paper - sport_activities
+        return thesis_anxiety + what_am_i_doing - pub_attendance \
+               + finish_the_paper - sport_activities
 
 
     return thesis_anxiety + what_am_i_doing - pub_attendance + finish_the_paper
