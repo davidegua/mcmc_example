@@ -32,7 +32,6 @@ def phd_stress_function(time, weather, theta_ar, doing_sport):
         return thesis_anxiety + what_am_i_doing - pub_attendance \
                + finish_the_paper - sport_activities
 
-
     return thesis_anxiety + what_am_i_doing - pub_attendance + finish_the_paper
 
 
